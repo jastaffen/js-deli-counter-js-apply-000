@@ -6,10 +6,10 @@ And don't go being too programmer-y and give them their index. These are normal 
 If they are 7th in line, tell them that. Don't get their hopes up by telling them they
 are number 6 in line.*/
 
-function takeANumber(line, name) {
-  line.push(name);
-  var number = line.length;
-  return `Welcome, ${name}. You are number ${number} in line.`;
+function takeANumber(line) {
+  var number = 0;
+  line.push(number++);
+  return `You are number ${number} in line.`;
 }
 
 /*Build a function `nowServing`. This function should accept the current line of people
